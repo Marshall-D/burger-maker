@@ -1,7 +1,14 @@
+import React from 'react';
+import Layout from "./components/Layout/Layout";
+import BurgerBuilder from "./containers/Burger-Builder/Burger-Builder";
+
+
+
 function App() {
   return (
-    <div>
-    </div>
+    <Layout>
+        <BurgerBuilder></BurgerBuilder>
+    </Layout>
   );
 }
 
