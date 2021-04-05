@@ -25,10 +25,9 @@ const BuildControls = (props) => (
             >
 
             </BuildControl>
-        ) )}
+        ) )};
 
-
-
+        <button className={classes.OrderButton}>ORDER NOW</button>
     </div>
 )
 
