@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Auxiliary from "../../hoc/auxiliary";
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
+import Modal from "../../components/ui/Modal/Modal";
 
 
 const INGREDIENTS_PRICES={
@@ -83,7 +84,8 @@ class BurgerBuilder extends Component {
 
         return (
             <Auxiliary>
-               <Burger ingredients={this.state.ingredients}></Burger>
+                <Modal/>
+                <Burger ingredients={this.state.ingredients}></Burger>
                 <div>
                     <BuildControls addedIngredient={this.addIngredientHandler}
                                    removeIngredient={this.removeIngredientHandler}
